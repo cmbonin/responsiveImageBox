@@ -1,0 +1,132 @@
+/*
+ * @file   : Styles for responsiveImageBox plugin
+ * @date   : 15/09/2014
+ * @author : celine.bonin@ninelanterns.com.au
+ */
+  img.imagebox{
+    max-width: 100%;
+}
+
+.image-alt{
+  display: none;
+  color: #D52B1E;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  img.imagebox{
+    display: none;
+    cursor: pointer;
+  }
+
+  img.imagebox.imagebox-gallery{
+    /*diplay: b*/
+  }
+
+  .image-alt{
+    display: block;
+    margin: 0px 5px 5px 5px;
+  }
+}
+
+
+img.imageboxview {
+  display: block;
+}
+
+.imagebox-close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #CCC;
+  color: #414141;
+  padding:  4px 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.imagebox-close:hover{
+  color: #fff;
+}
+
+.imagebox-image{
+  width: 100%;
+  height: 100%
+}
+
+.imagebox-wrap{
+  border: 5px #ccc solid;
+  position: absolute;
+  box-shadow: #000 0px 2px 7px;
+  z-index: 1501;
+  display: none;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.imagebox-overlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #414141;
+  opacity: 0.7;
+  display: none;
+  z-index: 1500;
+}
+
+.imagebox-wrap .fa{
+  position: absolute;
+  top: 50%;
+  padding: 3px;
+  color: transparent;
+
+}
+.imagebox-wrap .imagebox-arrow:hover .fa{
+  color: #fff;
+  /*background: #CCC;*/
+  color: #414141;
+}
+
+.imagebox-wrap .fa-chevron-right{
+  right: 4px;
+  /*border-radius: 3px 0 0 3px;*/
+}
+
+.imagebox-wrap .fa-chevron-left{
+  left: 4px;
+  /*border-radius: 0 3px 3px 0;*/
+}
+
+.imagebox-arrow{
+  padding: 2px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.imagebox-left{
+  left: 0;
+}
+
+.imagebox-right{
+  right: 0;
+}
+
+img.imagebox.imagebox-gallery {
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.imagebox-wrap img.imagebox.imagebox-gallery {
+  max-width:none;
+}

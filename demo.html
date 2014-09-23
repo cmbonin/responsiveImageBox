@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/responsiveImageBox.js"></script>
+    <link rel="stylesheet" href="css/responsiveImageBox.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // initialise the plugin
+        $('img.imagebox').responsiveImageBox();
+      });
+    </script>
+    <style type="text/css">
+      .container{
+        width: 900px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Responsive image box examples</h4>
+      <hr>
+      <div class="gallery">
+        <p>Images with imageBox gallery functionality</p>
+        <img src="images/github1.png" class="imagebox imagebox-gallery" />
+        <img src="images/github2.png" class="imagebox imagebox-gallery" />
+      </div>
+      <div class="row images">
+        <p>Images with imageBox functionality</p>
+        <img src="images/github3.jpg" class="imagebox" alt="Custom alt text"/>
+        <img src="images/github4.jpg" class="imagebox"/>
+      </div>
+    </div>
+  </body>
+</html>
